@@ -52,9 +52,7 @@ window.onload = function()
         else
         {
             pokemonEscolido = document.getElementById('nomePokemon').value;
-            pokemonNoDocumento = document.getElementById(pokemonEscolido);
-            //console.log(pokemonEscolido);
-            //console.log(pokemonNoDocumento);
+            pokemonNoDocumento = document.getElementById(pokemonEscolido.toLowerCase());
 
             if(pokemonNoDocumento == null) // Quando não existe esse pokemon
             {
